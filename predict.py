@@ -162,7 +162,7 @@ class Predictor(BasePredictor):
             description="Number of denoising steps. 20 to 60 steps for more detail, 20 steps for faster results.", ge=1, le=100, default=20
         ),
         guidance_scale: float = Input(
-            description="Scale for classifier-free guidance. Recommended 4-6", ge=1, le=50, default=7.5
+            description="Scale for classifier-free guidance. Recommended 4-6", ge=1, le=50, default=4
         ),
         prompt_strength: float = Input(
             description="Prompt strength when using img2img / inpaint. 1.0 corresponds to full destruction of information in image",
